@@ -1,4 +1,12 @@
-       //akses API firebase
+        /*
+            Name        : script.js
+            Author      : Abdurrahman Nurhakim
+            Version     : 1.0
+            Copyright   : Your copyright notice
+            Description : simple website for monitoring automatic trash destroyer (see repo: automatic-trash-destroyer), and it's integrated with firebase database 
+        */
+
+        //akses API firebase
        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
        import { getDatabase, ref, onValue, remove} from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
    
