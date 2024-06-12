@@ -4,14 +4,14 @@
    
        //ini buat konfigurasi firebase, data2nya ada di website firebase 
        const firebaseConfig = {
-         apiKey: "AIzaSyCE6p2s075BcH52X3NJaWESCXKDJ0zGFXA",
-         authDomain: "shanti-raspi-project.firebaseapp.com",
-         databaseURL: "https://shanti-raspi-project-default-rtdb.firebaseio.com",
-         projectId: "shanti-raspi-project",
-         storageBucket: "shanti-raspi-project.appspot.com",
-         messagingSenderId: "278526881604",
-         appId: "1:278526881604:web:353188df6dbcc4118bf111"
-       };
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        databaseURL: "YOUR_DATABASE_URL",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+        };
    
        //proses init sama get database, variablenya dapet dari import di atas
        const app = initializeApp(firebaseConfig);
