@@ -1,0 +1,71 @@
+/*
+ini buat style (warna tabel, tulisan dkk)
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00193f; /* Warna biru tua untuk latar belakang */
+    background-image: linear-gradient(45deg, rgba(44, 62, 80, 0.8) 25%, transparent 25%, transparent 50%, rgba(52, 73, 94, 0.8) 50%, rgba(44, 62, 80, 0.8) 75%, transparent 75%, transparent);
+    background-size: 20px 20px; /* Ukuran pola gradient */
+    animation: backgroundMove 10s linear infinite; /* Animasi latar belakang */
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #34495e; /* Warna tua untuk latar belakang tabel */
+    border-radius: 8px; /* Border radius untuk tampilan lebih halus */
+    overflow: hidden; /* Mengatasi sudut bulat */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Efek bayangan halus untuk tampilan lebih tiga dimensi */
+    transition: box-shadow 0.3s ease; /* Tambahkan transisi untuk efek bayangan */
+}
+
+table:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5); /* Efek bayangan lebih besar saat hover */
+}
+
+th, td {
+    padding: 12px; /* Padding lebih besar untuk kenyamanan */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Tambahkan transisi untuk perubahan warna dan teks */
+}
+
+th {
+    background-color: #1abc9c; /* Warna hijau tua untuk latar belakang header */
+    color: #ffffff; /* Warna teks header putih */
+    font-weight: bold; /* Tebalkan teks header */
+}
+
+td {
+    background-color: #2980b9; /* Warna biru tua untuk latar belakang sel */
+    color: #ffffff; /* Warna teks sel putih */
+}
+
+tr:nth-child(even) {
+    background-color: #3498db; /* Warna biru tua untuk latar belakang setiap baris genap */
+}
+
+tr:hover {
+    background-color: #1abc9c; /* Warna hijau tua untuk latar belakang saat hover */
+    color: #ffffff; /* Warna teks putih saat hover */
+    transform: scale(1.02); /* Zoom-in saat hover */
+    transition: transform 0.3s ease-in-out; /* Transisi untuk zoom-in */
+}
+
+tr:hover td {
+    background-color: #16a085; /* Warna hijau tua sedikit berbeda untuk sel saat hover */
+}
+
+tr:hover, tr:hover td {
+    animation: none; /* Hentikan animasi agar tetap di posisi saat hover */
+}
